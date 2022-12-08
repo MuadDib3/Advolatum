@@ -1,0 +1,122 @@
+.actual {
+
+   margin-bottom: 120px;
+
+   &__title {
+      font-family: 'Uindbase Font 1';
+      font-weight: 400;
+      font-size: 100px;
+      line-height: 100px;
+      text-align: right;
+      text-transform: uppercase;
+      position: relative;   
+      margin-bottom: 61px;   
+   }
+
+   &__galery {
+      display: flex;
+      gap: 50px;
+      width: 79.5%;
+      margin: 0 auto;
+   }
+
+   &__link {
+      width: 79.5%;
+      margin: 0 auto;
+      margin-top: 60px;
+      font-family: 'Uindbase Font 1';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: right;
+      text-decoration-line: underline;
+      text-transform: uppercase;
+      color: #FFFFFF;      
+   }
+}
+
+.actual-title__background {
+   font-size: 160px;
+   line-height: 160px;
+   text-align: right;
+   text-transform: uppercase;
+   top: -68px;
+}
+
+.galery__item {
+   flex-basis: 272px;
+   height: 461px;
+   background-color: #10171F;
+   background-repeat: no-repeat;
+   border-radius: 10px;
+   display: grid;
+   align-items: start;
+   align-content: end;
+   grid-template-columns: 0.7fr 1.3fr; 
+   grid-template-rows: 55px 27px;
+   grid-template-areas: "title title"  
+                        "price link"  
+}
+
+.galery__item .item {
+
+   &__title {
+      padding-left: 7px;
+      grid-area: title;
+      font-family: 'Uindbase Font 1';
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      text-transform: uppercase;      
+   }
+
+   &__price {
+      padding-left: 7px;
+      grid-area: price;
+      font-family: 'Uindbase Font 1';
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;      
+   }
+
+   &__button {
+      padding-left: 7px;
+      padding-right: 14px;
+      grid-area: link;
+      justify-self: end;
+      button {
+         font-family: 'Uindbase Font 1';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 20px;
+         line-height: 20px;  
+         text-decoration-line: underline;
+         text-transform: uppercase;
+      }
+   }
+}
+
+@media (max-width: 1600px){
+
+}
+
+@media (max-width: 1336px){
+
+}
+
+@media (max-width: 992px){
+
+}
+
+@media (max-width: 866px){
+
+}
+
+@media (max-width: 690px){
+
+}
+
+@media (max-width: 510px){
+
+}
