@@ -7,21 +7,20 @@ html {
 
 body {
    font-family: 'Uindbase Font 1';
-   font-size: 16px;
-   transition: all 100ms;   
-   border: #0fd84b solid 2px;
+   font-size: 16px;  
+   // border: #0fd84b solid 2px;
+   overflow-x: hidden;
 }
 
-section {
-   border: #d80f0f solid 2px;
-}
+// section {
+//    border: #d80f0f solid 2px;
+// }
 
 .container {
    max-width: 1600px;
    width: 100%;
    margin: 0 auto;
    padding: 0 15px;
-   background-image: url();
 }
 
 //!--------------------components-------------------------

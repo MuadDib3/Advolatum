@@ -35,13 +35,13 @@ body {
   margin: 0;
 }
 
-/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
-ul[class],
-ol[class] {
+/* Удаляем стандартную стилизацию для всех ul и ol*/
+ul,
+ol {
   list-style: none;
-  padding-left: 0;
   margin-block-start: 0em;
   margin-block-end: 0em; 
+  padding-inline-start: 0px;
 }
 
 /* Элементы a сбрасываем до дефолтных стилей */

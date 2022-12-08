@@ -5,9 +5,20 @@
 
    &__logo {
       margin: 0 auto;
-      width: 13%;
+      width: 350px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 35px;
+      line-height: 25px;
+      letter-spacing: -2px;
+      gap: 20px;
       img {
+         max-width: 40px;
          width: 100%;
+      }
+      span {
+         display: inline-block;
       }
       margin-bottom: 35px;
    }
@@ -117,7 +128,15 @@
    .title-item__background{
    font-size: 105px;
    line-height: 90px;
+   }
 
+   .title__logo {
+      font-size: 23px;
+      line-height: 23px;
+      img {
+         max-width: 30px;
+         width: 100%;
+      }
    }
    .title__item {
       font-size: 85px;
