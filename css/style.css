@@ -63,6 +63,9 @@ body {
 .link_yellow:hover {
   filter: drop-shadow(0 0 5px #D1C12B);
   -webkit-filter: drop-shadow(0 0 5px #D1C12B);
+.link_yellow:hover {
+  filter: drop-shadow(0 0 5px #D1C12B);
+  -webkit-filter: drop-shadow(0 0 5px #D1C12B);
 }
 
 .background-text {
@@ -87,6 +90,7 @@ body {
   padding-bottom: 20px;
   z-index: 100;
   background: #0B0F14;
+  width: 100vw;
   width: 100vw;
 }
 .header__container {
@@ -164,6 +168,8 @@ body {
 
 .nav__item.nav__item_active {
   color: #D1C12B;
+  filter: drop-shadow(0 0 5px #D1C12B);
+  -webkit-filter: drop-shadow(0 0 5px #D1C12B);
   filter: drop-shadow(0 0 5px #D1C12B);
   -webkit-filter: drop-shadow(0 0 5px #D1C12B);
 }
