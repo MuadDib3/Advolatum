@@ -6,7 +6,7 @@
    padding-bottom: 20px;   
    z-index: 100;
    background: #0B0F14;
-   width: 100%;
+   width: 100vw;
 
    &__container {
       display: flex;
@@ -85,7 +85,6 @@
       box-shadow: 0px 0px 2px 1px #A332CA;
       z-index: 1;
    }
-
 }
 
 .nav__item.nav__item_active {
@@ -93,6 +92,8 @@
    a svg {
       fill: #D1C12B;
    }
+   filter: drop-shadow( 0 0 5px #D1C12B);
+   -webkit-filter: drop-shadow( 0 0 5px #D1C12B);
 }
 
 

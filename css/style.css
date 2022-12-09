@@ -2,13 +2,23 @@
 html {
   background: #0B0F14;
   color: #fff;
-  overflow-x: hidden;
+  width: 100vw;
 }
 
 body {
   font-family: "Uindbase Font 1";
   font-size: 16px;
   overflow-x: hidden;
+  border: #0fd819 solid 2px;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
+section {
+  border: #d80f0f solid 2px;
 }
 
 .container {
@@ -53,8 +63,9 @@ body {
   background-image: url(/img/yellowLogo.svg);
   background-repeat: no-repeat;
 }
-.link_yellow a {
-  font-family: "Roboto";
+.link_yellow:hover {
+  filter: drop-shadow(0 0 5px #D1C12B);
+  -webkit-filter: drop-shadow(0 0 5px #D1C12B);
 }
 
 .background-text {
@@ -79,7 +90,7 @@ body {
   padding-bottom: 20px;
   z-index: 100;
   background: #0B0F14;
-  width: 100%;
+  width: 100vw;
 }
 .header__container {
   display: flex;
@@ -156,6 +167,8 @@ body {
 
 .nav__item.nav__item_active {
   color: #D1C12B;
+  filter: drop-shadow(0 0 5px #D1C12B);
+  -webkit-filter: drop-shadow(0 0 5px #D1C12B);
 }
 .nav__item.nav__item_active a svg {
   fill: #D1C12B;
@@ -985,4 +998,117 @@ body {
   .copyrights__logo span {
     font-size: 25px;
   }
+}
+.container-modal {
+  visibility: hidden;
+  position: fixed;
+  top: -500px;
+  left: 0;
+  z-index: 150;
+  background-color: #0B0F14;
+}
+
+.container-modal.nav-burger_active {
+  animation: nav-burger;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+.container-modal.nav-burger_closed {
+  animation: nav-burger;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes nav-burger {
+  0% {
+    top: -500px;
+    visibility: hidden;
+  }
+  100% {
+    top: 100px;
+    visibility: visible;
+  }
+}
+.burger__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.burger-nav__item {
+  font-family: "Uindbase Font 1";
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.burger-nav__item:hover {
+  text-decoration: underline;
+}
+.burger-nav__item:nth-child(2) {
+  margin-right: 11px;
+  flex-shrink: 0;
+}
+.burger-nav__item:nth-child(2) a {
+  display: flex;
+  gap: 5px;
+}
+.burger-nav__item:nth-child(2) a svg {
+  fill: #fff;
+  margin-top: -3px;
+}
+
+.burger-nav__item.nav__item_active {
+  color: #D1C12B;
+  filter: drop-shadow(0 0 5px #D1C12B);
+  -webkit-filter: drop-shadow(0 0 5px #D1C12B);
+}
+.burger-nav__item.nav__item_active a svg {
+  fill: #D1C12B;
+}
+
+.burger-nav__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.nav__burger_open {
+  position: relative;
+  width: 50px;
+  height: 30px;
+}
+.nav__burger_open:before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: #ffffff;
+  transform: rotate(-45deg);
+  box-shadow: 0px 0px 2px 1px #D1C12B;
+  z-index: 5;
+}
+.nav__burger_open:after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 20px;
+  width: 31px;
+  height: 2px;
+  background: #ffffff;
+  transform: rotate(45deg);
+  box-shadow: 0px 0px 2px 1px #A332CA;
+  z-index: 1;
 }
