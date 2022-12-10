@@ -1,0 +1,114 @@
+.catalog {
+  margin-bottom: 150px;
+}
+.catalog__title {
+  margin-top: 193px;
+  margin-left: 3%;
+  font-size: 130px;
+  line-height: 113px;
+  font-family: "Usually";
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: normal;
+  color: #1F252D;
+  margin-bottom: 30px;
+}
+.catalog__content {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 26% 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px;
+}
+
+.content__nav {
+  display: block;
+  align-self: start;
+  padding-top: 150px;
+  margin-left: 30%;
+  margin-right: 10px;
+}
+.content__galery {
+  display: grid;
+  max-width: 860px;
+  width: 100%;
+  grid-template-columns: 0.33fr 0.33fr 0.33fr;
+  grid-template-rows: 0.33fr 0.33fr 0.33fr;
+  gap: 24px;
+}
+
+.nav-content__item {
+  padding: 3px;
+  margin-bottom: 60px;
+  font-family: "Uindbase Font 1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.nav-content__item_active {
+  position: relative;
+  left: 30px;
+  text-shadow: -2px 0 5px #D1C12B, 3px 0 0px #8229A4;
+}
+.nav-content__item_active:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60px;
+  width: 54px;
+  height: 26px;
+  background-image: url(/img/Arrow-nav-active.svg);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  filter: drop-shadow(0 0 2px #D1C12B);
+  -webkit-filter: drop-shadow(0 0 2px #D1C12B);
+}
+
+@media (max-width: 1336px) {
+  .catalog__title {
+    font-size: 110px;
+    line-height: 100px;
+  }
+  .catalog__content {
+    grid-template-columns: 20% 1fr;
+  }
+  .content__nav {
+    margin-left: 20%;
+  }
+  .nav-content__item {
+    font-size: 17px;
+    margin-bottom: 55px;
+  }
+}
+@media (max-width: 992px) {
+  .content__galery {
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: repeat(1fr);
+  }
+  .nav-content__item {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .nav-content__item_active {
+    left: 10px;
+  }
+  .nav-content__item_active:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 20px;
+    height: 26px;
+    background-size: 54px 26px;
+    background-position: 100% 50%;
+  }
+  .content__gal-item:last-child {
+    display: none;
+  }
+}
