@@ -18,10 +18,6 @@ body {
   height: 100vh;
 }
 
-section {
-  border: #d80f0f solid 2px;
-}
-
 .container {
   max-width: 1600px;
   width: 100%;
@@ -757,25 +753,25 @@ section {
     width: 100%;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 410px) {
   .actual__title {
     font-size: 48px;
     line-height: 48px;
   }
-  .galery__item {
+  .actual__galery .galery__item {
     flex-basis: 280px;
     height: 461px;
     background-size: auto 373px;
   }
-  .galery__item .item__button {
+  .actual__galery .galery__item .item__button {
     font-size: 20px;
     line-height: 20px;
   }
-  .galery__item .item__price {
+  .actual__galery .galery__item .item__price {
     font-size: 20px;
     line-height: 20px;
   }
-  .galery__item .item__title {
+  .actual__galery .galery__item .item__title {
     font-size: 20px;
     line-height: 20px;
   }

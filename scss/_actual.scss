@@ -206,19 +206,19 @@
    }
 }
 
-@media (max-width: 420px){
+@media (max-width: 410px){
 
    .actual__title {
       font-size: 48px;
       line-height: 48px;
    }
 
-   .galery__item{
+   .actual__galery .galery__item{
       flex-basis: 280px;
       height: 461px;
       background-size: auto 373px;
    }
-   .galery__item .item {
+   .actual__galery .galery__item .item {
       &__button {
          font-size: 20px;
          line-height: 20px;
