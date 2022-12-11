@@ -1,4 +1,4 @@
-.collection {
+.collections {
 
    margin-bottom: 124px;
 
@@ -40,7 +40,7 @@
    }
 }
 
-.collection-title__background {
+.collections-title__background {
    top: -43px;
    font-size: 140px;
    line-height: 160px;
@@ -68,7 +68,7 @@
 
 
 @media (max-width: 1600px){
-   .collection-title__background {
+   .collections-title__background {
       font-size: 170px;
       line-height: 140px;
    }
@@ -79,7 +79,7 @@
    .collection__article {
       background-position: 30% 10%;
    }
-   .collection-title__background {
+   .collections-title__background {
       font-size: 150px;
       line-height: 120px;
    }
@@ -90,14 +90,14 @@
       font-size: 100px;
       line-height: 100px;
    }
-   .collection-title__background {
+   .collections-title__background {
       top: -90px;
       font-size: 90px;
    }
 }
 
 @media (max-width: 866px){
-   .collection-title__background {
+   .collections-title__background {
       font-size: 90px;
       line-height: 110px;
       padding: 0 15px;
@@ -117,7 +117,7 @@
 }
 
 @media (max-width: 690px){
-   .collection-title__background {
+   .collections-title__background {
       font-size: 70px;
       line-height: 70px;
       top: -10px;
@@ -131,7 +131,7 @@
 }
 
 @media (max-width: 510px){
-   .collection-title__background {
+   .collections-title__background {
       font-size: 50px;
       line-height: 50px;
       top: -5px;
