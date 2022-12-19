@@ -1,4 +1,33 @@
 .about__title {
-  margin-top: 150px;
+  margin-top: 250px;
+  margin-bottom: 90px;
+  text-align: end;
+  position: relative;
+  font-family: "Uindbase Font 1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 100px;
+}
+.about__text {
   margin-bottom: 70px;
+  font-family: "Uindbase Font 1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.about__galery {
+  display: flex;
+  gap: 30px;
+  padding-left: 50px;
+}
+
+.about__title .about-title__background {
+  text-align: end;
+  right: 0;
+  top: -60px;
+  font-size: 160px;
+  line-height: 160px;
 }
