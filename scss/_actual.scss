@@ -126,7 +126,7 @@
 }
 
 @media (max-width: 1040px) {
-   .galery__item:last-child {
+   .actual__galery .galery__item:last-child {
       display: none;
    }
 
@@ -148,7 +148,7 @@
       justify-content: center;
       gap: 40px;
    }
-   .galery__item:last-child {
+   .actual__galery .galery__item:last-child {
       display: grid;
    }
 }

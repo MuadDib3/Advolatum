@@ -126,7 +126,7 @@
          background-position: 100% 50%;
       }
    }
-   .content__gal-item:last-child {
+   .content__galery .galery__item:last-child {
       display: none;
    }
 }
@@ -136,6 +136,9 @@
       margin-top: 160px;
       font-size: 90px;
       line-height: 80px;
+   }
+   .content__galery .galery__item:last-child {
+      display: none;
    }
 }
 

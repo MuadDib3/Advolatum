@@ -1,3 +1,8 @@
-.collection {
+.collection__title {
   margin-top: 250px;
+  position: relative;
+  margin-bottom: 50px;
+}
+.collection__items {
+  margin-bottom: 80px;
 }

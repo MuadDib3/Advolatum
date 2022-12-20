@@ -10,6 +10,7 @@
   line-height: 100px;
 }
 .about__text {
+  margin: 0 auto;
   margin-bottom: 70px;
   font-family: "Uindbase Font 1";
   font-style: normal;
@@ -22,6 +23,7 @@
   display: flex;
   gap: 30px;
   padding-left: 50px;
+  margin-bottom: 120px;
 }
 
 .about__title .about-title__background {
@@ -30,4 +32,107 @@
   top: -60px;
   font-size: 160px;
   line-height: 160px;
+}
+
+.galery-about__item {
+  height: 360px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
+}
+.galery-about__item:nth-child(1) {
+  width: 30%;
+}
+.galery-about__item:nth-child(2) {
+  width: 45%;
+}
+.galery-about__item:nth-child(3) {
+  width: 25%;
+}
+
+@media (max-width: 1600px) {
+  .about__title .about-title__background {
+    font-size: 140px;
+    line-height: 140px;
+    top: -50px;
+  }
+  .about__text {
+    max-width: 1400px;
+  }
+  .about__galery {
+    gap: 25px;
+    padding-left: 0;
+  }
+  .galery-about__item {
+    height: 340px;
+  }
+}
+@media (max-width: 1200px) {
+  .about__title .about-title__background {
+    font-size: 140px;
+    line-height: 140px;
+  }
+  .about__text {
+    max-width: 1100px;
+  }
+  .about__galery {
+    gap: 25px;
+    padding-left: 0;
+  }
+  .galery-about__item {
+    height: 300px;
+  }
+}
+@media (max-width: 866px) {
+  .about__title .about-title__background {
+    font-size: 100px;
+    line-height: 100px;
+    top: -37px;
+  }
+  .about__title {
+    font-size: 70px;
+    line-height: 70px;
+    margin-bottom: 25px;
+    margin-top: 200px;
+  }
+  .galery-about__item {
+    height: 300px;
+  }
+  .galery-about__item:nth-child(1) {
+    width: 45%;
+  }
+  .galery-about__item:nth-child(2) {
+    width: 55%;
+  }
+  .galery-about__item:last-child {
+    display: none;
+  }
+}
+@media (max-width: 510px) {
+  .about__title .about-title__background {
+    font-size: 80px;
+    line-height: 80px;
+    top: -22px;
+  }
+  .about__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 25px;
+    margin-top: 200px;
+  }
+  .about__galery {
+    flex-wrap: wrap;
+  }
+  .galery-about__item {
+    height: 300px;
+  }
+  .galery-about__item:nth-child(1) {
+    width: 100%;
+  }
+  .galery-about__item:nth-child(2) {
+    width: 100%;
+  }
+  .galery-about__item:last-child {
+    display: none;
+  }
 }
