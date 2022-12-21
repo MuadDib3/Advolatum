@@ -2,7 +2,7 @@
    position: fixed;
    top: 0;
    left: 0;
-   padding-top: 50px;
+   padding-top: 30px;
    padding-bottom: 20px;   
    z-index: 100;
    background: #0B0F14;
@@ -110,8 +110,8 @@
 @media (max-width: 992px){
 
    .header {
-      padding-top: 15px;
-      padding-bottom: 15px;
+      padding-top: 20px;
+      padding-bottom: 20px;
    }
 
    .nav-header {
@@ -156,8 +156,8 @@
 @media (max-width: 555px){
 
    .header {
-      padding-top: 5px;
-      padding-bottom: 5px;
+      padding-top: 10px;
+      padding-bottom: 10px;
    }
 
    .header__nav {

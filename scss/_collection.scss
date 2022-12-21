@@ -17,14 +17,10 @@
       width: 79.5%;
       height: 587px;
       margin: 0 auto;
-      padding-top: 312px;
-      padding-right: 100px;
-      display: flex;
-      align-items: flex-end;
-      flex-direction: column;
       position: relative;
       background-repeat: no-repeat;
-      background-position: 60% 10%;
+      background-position: 30% 10%;
+      position: relative;
 
       &:before {
          content: '';
@@ -50,6 +46,9 @@
 .article {
 
    &__descr {
+      position: absolute;
+      top: 312px;
+      right: 100px;
       max-width: 300px;
       width: 100%;
       font-family: 'Uindbase Font 1';
@@ -62,7 +61,11 @@
    }
 
    &__link {
-      margin-right: 30px;
+      position: absolute;
+      top: 372px;
+      right: 130px;
+      margin-left: 71%;
+      width: 241px;
    }
 }
 
@@ -76,7 +79,7 @@
 
 @media (max-width: 1336px){
 
-   .collection__article {
+   .collections__article {
       background-position: 30% 10%;
    }
    .collections-title__background {
@@ -86,7 +89,7 @@
 }
 
 @media (max-width: 992px){
-   .collection__title {
+   .collections__title {
       font-size: 100px;
       line-height: 100px;
    }
@@ -102,17 +105,27 @@
       line-height: 110px;
       padding: 0 15px;
    }
-   .collection__title {
+   .collections__title {
       font-size: 80px;
       line-height: 80px;
       padding: 0 15px;
    }
 
-   .collection__container {
+   .collections__container {
       padding: 0;
    }
-   .collection__article {
+   .collections__article {
+      height: 495px;
       width: 100%;
+      margin: 0;
+   }
+   .article__descr {
+      top: 280px;
+      right: 50px;
+   }
+   .article__link {
+      top: 340px;
+      right: 70px;
    }
 }
 
@@ -122,7 +135,7 @@
       line-height: 70px;
       top: -10px;
    }
-   .collection__title {
+   .collections__title {
       font-size: 70px;
       line-height: 70px;
       max-width: 560px;
@@ -136,7 +149,7 @@
       line-height: 50px;
       top: -5px;
    }
-   .collection__title {
+   .collections__title {
       font-size: 50px;
       line-height: 50px;
       max-width: 390px;

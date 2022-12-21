@@ -1,13 +1,290 @@
 .collection {
 
    &__title {
-      margin-top: 250px;
+      margin-left: 160px;
+      font-size: 100px;
+      line-height: 100px;
       position: relative;
-      margin-bottom: 50px;
    }
-   &__items {
+
+   &__galery {
+      margin-bottom: 130px;
+   }
+
+   &__goods {
       margin-bottom: 80px;
+   }
+
+   &__next {
+      display: flex;
+      font-family: 'Uindbase Font 1';
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: uppercase;
+      img {
+         display: inline-block;
+         margin-left: 45px;
+         width: 126px;
+         height: 14px;
+      }
    }
 }
 
+.collection-container__title {
+   display: flex;
+   gap: 30px;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 250px;
+   margin-bottom: 22px;
+}
 
+.collection-title__background {
+   font-size: 120px;
+   line-height: 105px;
+   top: -20px;
+}
+
+.collection-container__galery {
+   max-width: 1063px;
+}
+
+.galery {
+
+   &__next {
+      color: #fff;
+      z-index: 100;
+   }
+
+   &__images {
+      display: grid;
+      height: fit-content;
+      gap: 22px;
+      grid-template-columns: 0.31fr 0.69fr; 
+      grid-template-rows: 352px 344px 1fr;
+      grid-template-areas: "img-1 img-3"  
+                           "img-2 img-3"
+                           "collection-name collection-text";
+      overflow: visible; 
+      margin-bottom: 60px;
+   }
+
+}
+
+.images__item {
+   &:nth-child(1) {
+      grid-area: img-1;
+      background-repeat: no-repeat;
+      background-position: 55% 40%;
+      background-size: cover;
+   }
+   &:nth-child(2) {
+      grid-area: img-2;
+      width: 200%;
+      z-index: 10;
+      background-repeat: no-repeat;
+      background-position: 40% 30%;
+      background-size: cover;
+
+   }
+   &:nth-child(3) {
+      grid-area: collection-name;
+      font-family: 'Uindbase Font 1';
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 25px;
+      text-transform: uppercase;
+      position: relative;
+      span {
+         display: inline-block;
+         position: absolute;
+         top: 105px;
+         right: -100px;
+         transform: rotate(-90deg);
+         font-family: 'Usually';
+         font-style: normal;
+         font-weight: 700;
+         font-size: 85px;
+         line-height: 85px;
+         text-decoration-line: underline;
+         text-transform: uppercase;
+      }
+   }
+   &:nth-child(4) {
+      grid-area: img-3;
+      height: 918px;
+      background-repeat: no-repeat;
+      background-position: 30% 50%;
+      background-size: cover;
+
+   }
+   &:nth-child(5) {
+      grid-area: collection-text;
+      margin-top: 205px;
+      font-family: 'Uindbase Font 1';
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 25px;
+      text-transform: uppercase;
+   }
+}
+
+@media (max-width: 1140px) {
+   .collection__title {
+      font-size: 80px;
+      line-height: 80px;
+   }
+   .collection-title__background {
+      font-size: 100px;
+      line-height: 90px;
+   }
+   .collection__next {
+      img {
+         margin-left: 30px;
+         width: 110px;
+      }
+   }
+}
+
+@media (max-width: 992px) {
+   .collection__title {
+      margin-left: 40px;
+   }
+   .collection-container__title {
+      margin-top: 170px;
+   }
+}
+
+@media (max-width: 866px) {
+   .collection-container__title {
+      margin-top: 150px;
+      flex-direction: column;
+      gap: 22px;
+      align-items: start;
+      .collection__next {
+         align-self: end;
+         }
+      }
+   .collection__title {
+      margin-left: 0;
+      font-size: 70px;
+      line-height: 70px;
+   }
+   .collection-title__background {
+      font-size: 70px;
+      line-height: 65px;
+      top: -5px;
+   }
+   .collection__next {
+      img {
+         margin-left: 25px;
+      }
+   }
+   .galery__images {
+      gap: 11px;
+      grid-template-rows: 200px 185px 1fr;
+   }
+   .images__item:nth-child(2) {
+      width: 150%;
+   }
+   .images__item:nth-child(3) {
+      font-size: 18px;
+      line-height: 18px;
+      span {
+         top: 55px;
+         left: 0;
+         transform: rotate(0deg);
+         font-size: 31px;
+         line-height: 31px;
+      }
+   }
+   .images__item:nth-child(4) {
+      height: 500px;
+   }
+   .images__item:nth-child(5) {
+      margin-top: 110px;
+      font-size: 18px;
+      line-height: 18px;
+   }
+}
+
+@media (max-width: 570px) {
+
+   .collection__title {
+      font-size: 60px;
+      line-height: 60px;
+   }
+   .collection-title__background {
+      font-size: 50px;
+      line-height: 45px;
+      top: 6px;
+   }
+   .images__item:nth-child(3) {
+      font-size: 14px;
+      line-height: 14px;
+      span {
+         top: 55px;
+         left: 0;
+         transform: rotate(0deg);
+         font-size: 25px;
+         line-height: 25px;
+      }
+   }
+   .images__item:nth-child(5) {
+      font-size: 14px;
+      line-height: 14px;
+   }
+}
+
+@media (max-width: 410px) {
+
+   .collection__title {
+      font-size: 45px;
+      line-height: 45px;
+      padding: 0;
+   }
+   .collection-title__background {
+      font-size: 35px;
+      line-height: 30px;
+      top: 8px;
+   }
+   .collection-container__title {
+      margin-top: 100px;
+   }
+   .collection__next {
+      font-size: 15px;
+      line-height: 15px;
+      img {
+         margin-left: 15px;
+         width: 80px;
+         height: 14px;
+      }
+   }
+
+   .galery__images {
+      grid-template-rows: 170px 160px 1fr 1fr;
+      grid-template-areas: "img-1 img-3"
+                           "img-2 img-3"
+                           "collection-name img-3"
+                           "collection-text collection-text";
+   }
+
+   .images__item:nth-child(3) {
+      font-size: 0px;
+      line-height: 0px;
+      span {
+         top: 50%;
+         left: 0;
+         transform: rotate(0deg) translateY(-50%);
+         font-size: 22px;
+         line-height: 22px;
+      }
+   }
+   .images__item:nth-child(4) {
+      height: 420px;
+   }
+   .images__item:nth-child(5) {
+      margin-top: 0;
+   }
+}
