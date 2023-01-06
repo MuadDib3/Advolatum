@@ -9,6 +9,7 @@
    <link rel="stylesheet" href="/css/normalize.css">
    <link rel="stylesheet" href="/css/null.css">
    <link rel="stylesheet" href="/css/style.css">
+   <link rel="stylesheet" href="/css/">
 </head>
 <!-- total time wasted here: 22часа 
 
@@ -39,7 +40,83 @@
 </header>
 <main class="main__cart">
 <div class="container">
-   <h1 class="cart__title">Корзина</h1>
+   <h1 class="cart__title">Корзина
+      <div class="cart-title__background background-text">Корзина</div>
+   </h1>
+</div>
+<div class="container cart__flex">
+   <div class="cart__list">
+      <div class="list__item">
+         <img src="" alt="">
+         <h3>Костюм Соцветие</h3>
+         <div>Размер: М</div>
+         <div>Количество - 1 +</div>
+         <div>Цена: 3700Р</div>
+      </div>
+      <div class="list__item">
+         <img src="" alt="">
+         <h3>Костюм Соцветие</h3>
+         <div>Размер: М</div>
+         <div>Количество - 1 +</div>
+         <div>Цена: 3700Р</div>
+      </div>
+      <div class="list__item">
+         <img src="" alt="">
+         <h3>Костюм Соцветие</h3>
+         <div>Размер: М</div>
+         <div>Количество - 1 +</div>
+         <div>Цена: 3700Р</div>
+      </div>
+      <div class="list__item">
+         <img src="" alt="">
+         <h3>Костюм Соцветие</h3>
+         <div>Размер: М</div>
+         <div>Количество - 1 +</div>
+         <div>Цена: 3700Р</div>
+      </div>
+      <div class="list__item">
+         <img src="" alt="">
+         <h3>Костюм Соцветие</h3>
+         <div>Размер: М</div>
+         <div>Количество - 1 +</div>
+         <div>Цена: 3700Р</div>
+      </div>
+      <label class="visible">
+         <input type="checkbox">
+         Согласие на обработку персональных даннных
+      </label>
+      <button class="link_yellow hidden" type="button">Перейти к форомлению</button>
+   </div>
+   <div class="cart__forms">
+      <h3 class="forms__title">Оформление заказа</h3>
+      <form class="forms__item" action="">
+      <div class="forms__subtitle">данные получателя</div>
+         <input type="text" placeholder="фамилия">
+         <input type="text" placeholder="Имя">
+         <input type="text" placeholder="Отчество (если есть)">
+      <div class="forms__subtitle">контакты</div>
+         <input type="tel" placeholder="+7 --- --- -- --">
+         <input type="email" placeholder="email">
+      <div class="forms__subtitle">данные места доставки</div>
+         <input type="text" placeholder="город">
+         <input type="text" placeholder="улица">
+         <input type="text" placeholder="дом">
+         <input type="text" placeholder="квартира">
+         <label>
+            <input type="radio" name="pay-method" value="online">
+            Оплата Online
+         </label>
+         <label>
+            <input type="radio" name="pay-method" value="offline">
+            Оплата при получении
+         </label>
+      </form>
+      <label class="hidden">
+         <input type="checkbox">
+         Согласие на обработку персональных даннных
+      </label>
+      <button class="link_yellow" type="button">Оформить</button>
+   </div>
 </div>
 </main>
 <footer class="footer">
