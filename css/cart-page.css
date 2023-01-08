@@ -1,0 +1,284 @@
+.main__cart {
+  min-height: 90vh;
+}
+
+.container.cart-container {
+  max-width: 1284px;
+}
+
+.cart__title {
+  margin-top: 193px;
+  margin-bottom: 16px;
+  font-family: "Uindbase Font 1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 70px;
+  text-transform: uppercase;
+  position: relative;
+}
+.cart__flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 13px;
+  margin-bottom: 95px;
+}
+.cart__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.cart__forms {
+  width: 100%;
+}
+
+.cart-title__background {
+  top: -45px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 130px;
+  line-height: 113px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.list__item {
+  width: 797px;
+  background: #10171F;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  overflow: hidden;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 0.25fr 0.2fr 0.3fr 0.25fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-areas: "img title title title" "img size number price";
+  justify-items: start;
+  align-items: start;
+}
+.list__text {
+  margin-top: 11px;
+  align-self: end;
+  text-align: right;
+  max-width: 460px;
+  font-family: "Uindbase Font 1";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #3B4654;
+}
+.list__delivery {
+  margin-top: 11px;
+  align-self: end;
+  font-family: "Uindbase Font 1";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: right;
+  text-transform: uppercase;
+}
+.list__total-price {
+  margin-top: 11px;
+  align-self: end;
+  align-self: end;
+  font-family: "Uindbase Font 1";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: right;
+  text-transform: uppercase;
+}
+.list__agreement {
+  margin-top: 33px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 423px;
+  gap: 24px;
+}
+.list__agreement #agreement {
+  position: absolute;
+  opacity: 0;
+}
+.list__agreement label {
+  display: flex;
+  background: #10171F;
+  border-radius: 10px;
+  height: 52px;
+  max-width: 194px;
+  align-items: center;
+  justify-content: space-around;
+  gap: 25px;
+  padding: 6px 10px;
+  font-family: "Uindbase Font 1";
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  text-transform: uppercase;
+}
+.list__agreement label::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 2px solid #3B4654;
+  flex-shrink: 0;
+  user-select: none;
+  background-size: 100% 100%;
+}
+.list__agreement label:hover::before {
+  border: 2px solid #D1C12B;
+}
+.list__agreement input:focus + label::before {
+  border: 2px solid #D1C12B;
+}
+.list__agreement input:checked + label::before {
+  background-image: url(/img/checked.svg);
+  border: 2px solid #3B4654;
+}
+
+.list-item__img {
+  grid-area: img;
+}
+.list-item__title {
+  grid-area: title;
+  align-self: end;
+  font-family: "Uindbase Font 1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.list-item__size {
+  grid-area: size;
+  font-family: "Uindbase Font 1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.list-item__number {
+  grid-area: number;
+  font-family: "Uindbase Font 1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.list-item__price {
+  grid-area: price;
+  font-family: "Uindbase Font 1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.forms__title {
+  padding-left: 13px;
+  border-left: solid 3px #1F252D;
+  font-family: "Uindbase Font 1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.forms__item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-left: solid 3px #1F252D;
+  padding-left: 13px;
+}
+
+.forms-item__subtitle {
+  margin-top: 25px;
+  font-family: "Uindbase Font 1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #464e59;
+}
+.forms-item__text {
+  width: 100%;
+  max-width: 423px;
+  height: 40px;
+  background: #10171F;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 10px;
+  margin: 0;
+  border: none;
+  line-height: 30px;
+  font-size: 30px;
+}
+.forms-item__radio {
+  margin-top: 33px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 423px;
+  gap: 24px;
+}
+.forms-item__radio #online {
+  position: absolute;
+  opacity: 0;
+}
+.forms-item__radio #offline {
+  position: absolute;
+  opacity: 0;
+}
+.forms-item__radio label {
+  display: flex;
+  background: #10171F;
+  border-radius: 10px;
+  height: 52px;
+  max-width: 194px;
+  align-items: center;
+  justify-content: space-around;
+  gap: 25px;
+  padding: 6px 10px;
+  font-family: "Uindbase Font 1";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.forms-item__radio label::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 2px solid #3B4654;
+  flex-shrink: 0;
+  user-select: none;
+  background-size: 100% 100%;
+}
+.forms-item__radio label:hover::before {
+  border: 2px solid #D1C12B;
+}
+.forms-item__radio input:focus + label::before {
+  border: 2px solid #D1C12B;
+}
+.forms-item__radio input[type=radio]:checked + label::before {
+  background-image: url(/img/checked.svg);
+  border: 2px solid #3B4654;
+}
+.forms-item__button {
+  margin-top: 78px;
+  width: 230px;
+  padding: 13px;
+  align-self: end;
+}
+
+.visible {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}

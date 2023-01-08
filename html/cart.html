@@ -9,7 +9,7 @@
    <link rel="stylesheet" href="/css/normalize.css">
    <link rel="stylesheet" href="/css/null.css">
    <link rel="stylesheet" href="/css/style.css">
-   <link rel="stylesheet" href="/css/">
+   <link rel="stylesheet" href="/css/cart-page.css">
 </head>
 <!-- total time wasted here: 22часа 
 
@@ -39,83 +39,86 @@
    </div>
 </header>
 <main class="main__cart">
-<div class="container">
+<div class="container cart-container">
    <h1 class="cart__title">Корзина
       <div class="cart-title__background background-text">Корзина</div>
    </h1>
 </div>
-<div class="container cart__flex">
+<div class="container cart-container cart__flex">
    <div class="cart__list">
       <div class="list__item">
-         <img src="" alt="">
-         <h3>Костюм Соцветие</h3>
-         <div>Размер: М</div>
-         <div>Количество - 1 +</div>
-         <div>Цена: 3700Р</div>
+         <img class="list-item__img" src="/img/catalog-1.webp" alt="">
+         <h3 class="list-item__title">Костюм Соцветие</h3>
+         <div class="list-item__size">Размер: М</div>
+         <div class="list-item__number">Количество - 1 +</div>
+         <div class="list-item__price">Цена: 3700Р</div>
       </div>
       <div class="list__item">
-         <img src="" alt="">
-         <h3>Костюм Соцветие</h3>
-         <div>Размер: М</div>
-         <div>Количество - 1 +</div>
-         <div>Цена: 3700Р</div>
+         <img class="list-item__img" src="/img/catalog-2.webp" alt="">
+         <h3 class="list-item__title">Костюм Соцветие</h3>
+         <div class="list-item__size">Размер: М</div>
+         <div class="list-item__number">Количество - 1 +</div>
+         <div class="list-item__price">Цена: 3700Р</div>
       </div>
       <div class="list__item">
-         <img src="" alt="">
-         <h3>Костюм Соцветие</h3>
-         <div>Размер: М</div>
-         <div>Количество - 1 +</div>
-         <div>Цена: 3700Р</div>
+         <img class="list-item__img" src="/img/catalog-1.webp" alt="">
+         <h3 class="list-item__title">Костюм Соцветие</h3>
+         <div class="list-item__size">Размер: М</div>
+         <div class="list-item__number">Количество - 1 +</div>
+         <div class="list-item__price">Цена: 3700Р</div>
       </div>
       <div class="list__item">
-         <img src="" alt="">
-         <h3>Костюм Соцветие</h3>
-         <div>Размер: М</div>
-         <div>Количество - 1 +</div>
-         <div>Цена: 3700Р</div>
+         <img class="list-item__img" src="/img/catalog-2.webp" alt="">
+         <h3 class="list-item__title">Костюм Соцветие</h3>
+         <div class="list-item__size">Размер: М</div>
+         <div class="list-item__number">Количество - 1 +</div>
+         <div class="list-item__price">Цена: 3700Р</div>
       </div>
       <div class="list__item">
-         <img src="" alt="">
-         <h3>Костюм Соцветие</h3>
-         <div>Размер: М</div>
-         <div>Количество - 1 +</div>
-         <div>Цена: 3700Р</div>
+         <img class="list-item__img" src="/img/catalog-1.webp" alt="">
+         <h3 class="list-item__title">Костюм Соцветие</h3>
+         <div class="list-item__size">Размер: М</div>
+         <div class="list-item__number">Количество - 1 +</div>
+         <div class="list-item__price">Цена: 3700Р</div>
       </div>
-      <label class="visible">
-         <input type="checkbox">
-         Согласие на обработку персональных даннных
-      </label>
-      <button class="link_yellow hidden" type="button">Перейти к форомлению</button>
+      <div class="list__text">Сумма доставки будет расчитана после ввода
+         данных о месте назначения - город, улица
+      </div>
+      <div class="list__delivery">доставка: 500₽</div>
+      <div class="list__total-price">Итого: 4251₽</div>
+      <div class="list__agreement visible">
+         <input id="agreement" type="checkbox">
+         <label for="agreement">Согласие на обработку персональных даннных</label>
+      </div>
+      <button class="link_yellow hidden" type="button">Перейти к форомлению</button>    
    </div>
    <div class="cart__forms">
       <h3 class="forms__title">Оформление заказа</h3>
       <form class="forms__item" action="">
-      <div class="forms__subtitle">данные получателя</div>
-         <input type="text" placeholder="фамилия">
-         <input type="text" placeholder="Имя">
-         <input type="text" placeholder="Отчество (если есть)">
-      <div class="forms__subtitle">контакты</div>
-         <input type="tel" placeholder="+7 --- --- -- --">
-         <input type="email" placeholder="email">
-      <div class="forms__subtitle">данные места доставки</div>
-         <input type="text" placeholder="город">
-         <input type="text" placeholder="улица">
-         <input type="text" placeholder="дом">
-         <input type="text" placeholder="квартира">
-         <label>
-            <input type="radio" name="pay-method" value="online">
-            Оплата Online
-         </label>
-         <label>
-            <input type="radio" name="pay-method" value="offline">
-            Оплата при получении
-         </label>
-      </form>
+         <div class="forms-item__subtitle">данные получателя</div>
+            <input class="forms-item__text" type="text" placeholder="Фамилия">
+            <input class="forms-item__text" type="text" placeholder="Имя">
+            <input class="forms-item__text" type="text" placeholder="Отчество (если есть)">
+         <div class="forms-item__subtitle">контакты</div>
+            <input class="forms-item__text" type="tel" placeholder="+7 --- --- -- --">
+            <input class="forms-item__text" type="email" placeholder="email">
+         <div class="forms-item__subtitle">данные места доставки</div>
+            <input class="forms-item__text" type="text" placeholder="город">
+            <input class="forms-item__text" type="text" placeholder="улица">
+            <input class="forms-item__text" type="text" placeholder="дом">
+            <input class="forms-item__text" type="text" placeholder="квартира">
+         <div class="forms-item__radio">
+            <input id="online" type="radio" name="pay-method" value="online">
+            <label for="online">Оплата Online</label>
+            <input id="offline" type="radio" name="pay-method" value="offline">
+            <label for="offline">Оплата при получении</label>
+         </div>
       <label class="hidden">
          <input type="checkbox">
          Согласие на обработку персональных даннных
       </label>
-      <button class="link_yellow" type="button">Оформить</button>
+      <button class="forms-item__button link_yellow" input type="submit">Оформить</button>
+   </form>
    </div>
 </div>
 </main>
