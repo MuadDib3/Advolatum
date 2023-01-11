@@ -9,6 +9,7 @@
    padding-top: 50px;
 }
 
+//!------------------burger------------------------
 
 .container-modal.nav-burger_active {
 
@@ -123,5 +124,53 @@
       transform: rotate(45deg);
       box-shadow: 0px 0px 2px 1px #A332CA;
       z-index: 1;
+   }
+}
+
+//!---------------------product------------------------
+
+.product {
+   display: flex;
+   gap: 60px;
+}
+
+.product {
+   &__img {
+      width: 492px;
+      height: 716px;
+      background-repeat: no-repeat;
+      background-position: 40% 50%;
+      background-size: cover;
+   }
+   &__descr {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      padding-top: 190px;
+   }
+}
+
+.descr {
+   &__price {
+      font-family: 'Uindbase Font 1';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 40px;
+   }
+   &__text {
+      font-family: 'Uindbase Font 1';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+   }
+   &__size {
+      font-family: 'Uindbase Font 1';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      word-spacing: 25px;
    }
 }
