@@ -65,26 +65,26 @@
       <div class="actual-title__background background-text">Актуаль ное</div>
    </h2>
    <div class="actual__galery">
-      <a href="javascript:void(0)" class="galery__item" style="background-image: url(/img/catalog-1.webp);">
+      <div tabindex="0" class="galery__item open-product-card" style="background-image: url(/img/catalog-1.webp);">
          <div class="item__title">Костюм Сlothing Store соцветие</div>
          <div class="item__price">3751&nbsp;₽</div>
          <div class="item__button"><button type="button" onclick="">В&nbsp;корзину</button></div>
-      </a>
-      <a href="javascript:void(0)" class="galery__item" style="background-image: url(/img/catalog-2.webp);">
+      </div>
+      <div tabindex="0" class="galery__item open-product-card" style="background-image: url(/img/catalog-2.webp);">
          <div class="item__title">Костюм Сlothing Store соцветие</div>
          <div class="item__price">3751&nbsp;₽</div>
          <div class="item__button"><button type="button" onclick="">В&nbsp;корзину</button></div>
-      </a>
-      <a href="javascript:void(0)" class="galery__item" style="background-image: url(/img/catalog-1.webp);">
+      </div>
+      <div tabindex="0" class="galery__item open-product-card" style="background-image: url(/img/catalog-1.webp);">
          <div class="item__title">Костюм Сlothing Store соцветие</div>
          <div class="item__price">3751&nbsp;₽</div>
          <div class="item__button"><button type="button" onclick="">В&nbsp;корзину</button></div>
-      </a>
-      <a href="javascript:void(0)" class="galery__item" style="background-image: url(/img/catalog-2.webp);">
+      </div>
+      <div tabindex="0" class="galery__item open-product-card" style="background-image: url(/img/catalog-2.webp);">
          <div class="item__title">Костюм Сlothing Store соцветие</div>
          <div class="item__price">3751&nbsp;₽</div>
          <div class="item__button"><button type="button" onclick="">В&nbsp;корзину</button></div>
-      </a>
+      </div>
    </div>
    <div class="actual__link"><a href="/html/catalog.html">смотреть больше</a></div>
 </section>
@@ -157,6 +157,20 @@
       <li class="links__item"><a href="https://vk.com/" target="_blank"><img src="/img/vk.svg" alt="vk"></a></li>
       <li class="links__item"><a href="https://www.tiktok.com/ru-RU/" target="_blank"><img src="/img/ttok.svg" alt="Tiktok"></a></li>
    </ul>
+</div>
+
+<div class="wrapper-product wrapper-product_closed" id="card-wrapper">
+   <div class="product">
+      <div class="product__img" style="background-image: url(/img/catalog-2.webp);"></div>
+      <div class="product__descr">
+         <button class="descr__close" tabindex="0" onclick="closeCard()"></button>
+         <div class="descr__price">3791.00 руб</div>
+         <div class="descr__text">Описание товара или состав ткани, в&nbsp;общем любая информация
+            которая может потребоваться покупателю</div>
+         <div class="descr__size">XXS&nbsp;XS&nbsp;S&nbsp;M&nbsp;L&nbsp;XL</div>
+         <button class="descr__button link_yellow"> В корзину</button>
+      </div>
+   </div>
 </div>
 
 <script src="/js/app.js"></script>

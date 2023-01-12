@@ -62,7 +62,8 @@
    grid-template-columns: 0.4fr 0.6fr; 
    grid-template-rows: 55px 27px;
    grid-template-areas: "title title"  
-                        "price link"  
+                        "price link";
+   cursor: pointer;  
 }
 
 .galery__item .item {
