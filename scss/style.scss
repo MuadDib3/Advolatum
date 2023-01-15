@@ -15,6 +15,9 @@ body {
 
 .no-scroll {
    overflow: hidden;
+   // position: fixed;
+   // top: 0;
+   // left: 0;
    height: 100vh;
 }
 
@@ -35,7 +38,7 @@ body {
 //---------------social links------------
 .social-links {
    display: flex;
-   gap: 7px;
+   gap: 10px;
 }
 
 .links {

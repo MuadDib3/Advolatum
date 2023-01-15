@@ -8,6 +8,7 @@
   font-weight: 400;
   font-size: 100px;
   line-height: 100px;
+  text-transform: uppercase;
 }
 .about__text {
   margin: 0 auto;

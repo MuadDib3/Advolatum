@@ -3,6 +3,7 @@
   font-size: 100px;
   line-height: 100px;
   position: relative;
+  text-transform: uppercase;
 }
 .collection__galery {
   margin-bottom: 130px;

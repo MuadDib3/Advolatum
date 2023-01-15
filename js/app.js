@@ -1,5 +1,4 @@
 function showBurger () {
-   // document.body.classList.toggle("no-scroll");
    document.documentElement.classList.add("no-scroll");
    const burger = document.getElementById('header-nav-burger');
    burger.classList.add('nav-burger_active');
@@ -7,25 +6,31 @@ function showBurger () {
 }
 
 function hideBurger () {
-   // document.body.classList.toggle("no-scroll");
    document.documentElement.classList.remove("no-scroll");
    const burger = document.getElementById('header-nav-burger');
    burger.classList.remove('nav-burger_active');
    burger.classList.add('nav-burger_closed');
 }
 
+
 function openCard () {
+   const scrollLockPadding = window.innerWidth - document.body.offsetWidth + 'px';
+   document.body.style.paddingRight = scrollLockPadding;
    const cardWrapper = document.getElementById('card-wrapper');
    cardWrapper.classList.add('wrapper-product_opened');
    document.documentElement.classList.add("no-scroll");
-   // document.body.classList.add("no-scroll");
+   cardWrapper.addEventListener('click', function(e) {
+      if (!e.target.closest('.product')) {
+         cardWrapper.classList.remove('wrapper-product_opened');
+         document.documentElement.classList.remove("no-scroll");
+      }
+   })
 }
 
 function closeCard () {
    const cardWrapper = document.getElementById('card-wrapper');
    cardWrapper.classList.remove('wrapper-product_opened');
    document.documentElement.classList.remove("no-scroll");
-   // document.body.classList.add("no-scroll");
 }
 
 const openProductCard = document.querySelectorAll ('.open-product-card');
