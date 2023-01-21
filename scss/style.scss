@@ -54,8 +54,11 @@ body {
 //----------------link_yellow-----------------
 
 .link_yellow {
-   display: inline-block;
-   min-width: 205px;
+   display: inline-flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 25px;
+   min-width: fit-content;
    border: 2px solid currentColor;
    border-radius: 50px;
    color: #D1C12B;
@@ -69,8 +72,8 @@ body {
       content: '';
       width: 23px;
       height: 16px;
-      margin-right: 25px;
       display: inline-block;
+      margin-top: -2px;
       background-image: url(/img/yellowLogo.svg);
       background-repeat: no-repeat;
    }

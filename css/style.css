@@ -37,8 +37,11 @@ body {
 }
 
 .link_yellow {
-  display: inline-block;
-  min-width: 205px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  min-width: fit-content;
   border: 2px solid currentColor;
   border-radius: 50px;
   color: #D1C12B;
@@ -53,8 +56,8 @@ body {
   content: "";
   width: 23px;
   height: 16px;
-  margin-right: 25px;
   display: inline-block;
+  margin-top: -2px;
   background-image: url(/img/yellowLogo.svg);
   background-repeat: no-repeat;
 }
@@ -994,13 +997,16 @@ body {
   }
   .footer__copyrights {
     order: 3;
+    width: 100%;
   }
   .footer__links {
     order: 1;
+    width: 100%;
   }
   .footer__social {
     order: 2;
     justify-content: center;
+    width: 100%;
   }
 }
 @media (max-width: 510px) {
@@ -1276,6 +1282,7 @@ body {
 }
 @media (max-width: 750px) {
   .product {
+    margin: 15px auto 15px;
     flex-direction: column;
     padding: 0 15px;
     align-items: center;
