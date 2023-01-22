@@ -196,8 +196,9 @@
       position: absolute;
       top: 13px;
       right: 13px;
-      div {
+      span {
          position: relative;
+         display: block;
          &:before {
             content: "";
             background-color: #fff;

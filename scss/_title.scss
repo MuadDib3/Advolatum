@@ -5,7 +5,6 @@
 
    &__logo {
       margin: 0 auto;
-      width: 350px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -212,8 +211,9 @@
    .title-item__background {
       font-size: 45px;
       line-height: 40px;
-      top: -40px;
+      top: -18px;
       max-width: 600px;
+      overflow-wrap: normal;
    }
    .title__item {
       font-size: 35px;
@@ -226,5 +226,11 @@
          font-size: 35px;
          line-height: 30px;
       }
+   }
+}
+
+@media (max-width: 350px) {
+   .title-item__background {
+      font-size: 40px;
    }
 }

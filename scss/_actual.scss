@@ -50,17 +50,17 @@
 
 .galery__item {
    flex-basis: 280px;
-   height: 461px;
    background-color: #10171F;
    background-repeat: no-repeat;
    background-size: auto 373px;
    background-position: 50% 0%;
    border-radius: 10px;
+   padding: 380px 7px 7px;
    display: grid;
-   align-items: start;
+   gap: 10px;
    align-content: end;
    grid-template-columns: 0.4fr 0.6fr; 
-   grid-template-rows: 55px 27px;
+   grid-template-rows: 0.67fr 0.32fr;
    grid-template-areas: "title title"  
                         "price link";
    cursor: pointer;  
@@ -69,7 +69,6 @@
 .galery__item .item {
 
    &__title {
-      padding-left: 7px;
       grid-area: title;
       font-family: 'Uindbase Font 1';
       font-weight: 400;
@@ -79,7 +78,6 @@
    }
 
    &__price {
-      padding-left: 7px;
       grid-area: price;
       font-family: 'Uindbase Font 1';
       font-weight: 400;
@@ -88,8 +86,6 @@
    }
 
    &__button {
-      padding-left: 7px;
-      padding-right: 14px;
       grid-area: link;
       justify-self: end;
       font-family: 'Uindbase Font 1';
@@ -168,13 +164,13 @@
    }
 
    .actual__galery {
-      gap: 20px;
-      padding: 0 30px;
+      gap: 40px;
+      padding: 0;
    }
    .galery__item {
       flex-basis: 180px;
-      height: 333px;
       background-size: auto 250px;
+      padding-top: 260px;
    }
 
    .galery__item .item {
@@ -194,16 +190,24 @@
 
 }
 
-@media (max-width: 510px){
+@media (max-width: 530px){
 
    .actual__title {
       font-size: 55px;
       line-height: 55px;
    }
 
+   .actual-title__background {
+      font-size: 60px;
+      line-height: 60px;
+      padding: 0;
+      top: -47px;
+   }
+
    .actual__galery {
       padding: 0;
       width: 100%;
+      gap: 18px;
    }
 }
 
@@ -216,8 +220,8 @@
 
    .actual__galery .galery__item{
       flex-basis: 280px;
-      height: 461px;
       background-size: auto 373px;
+      padding-top: 380px;
    }
    .actual__galery .galery__item .item {
       &__button {

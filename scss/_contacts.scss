@@ -108,7 +108,7 @@
    .contscts-title__background {
       font-size: 65px;
       line-height: 65px;
-      top: 0px;
+      top: 11px;
    } 
 }
 
@@ -120,23 +120,27 @@
    .contscts-title__background {
       font-size: 50px;
       line-height: 50px;
+      top: 25px;
    } 
 
    .map__links .links__item {
       font-size: 18px;
       line-height: 18px;
    }
+   .map__item {
+      height: 300px;
+   }
 }
 
 @media (max-width: 420px){
    .contacts__title {
-      font-size: 35px;
-      line-height: 35px;
+      font-size: 37px;
+      line-height: 37px;
    }
 
    .contscts-title__background {
-      font-size: 35px;
-      line-height: 35px;
+      font-size: 38px;
+      line-height: 38px;
       top: 20px;
    } 
 }

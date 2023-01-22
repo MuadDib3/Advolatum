@@ -358,7 +358,7 @@
     line-height: 30px;
   }
   .list__forms {
-    display: block;
+    display: inline-flex;
   }
 }
 @media (max-width: 700px) {
@@ -418,7 +418,7 @@
   .list__forms {
     font-size: 14px;
     line-height: 16px;
-    padding: 5px 10px;
+    padding: 10px 10px;
     overflow: visible;
   }
   .list-item__title {
