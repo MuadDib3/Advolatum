@@ -103,9 +103,9 @@
   max-width: 70%;
   margin: 0 auto;
   margin-top: 50px;
-  font-size: 20px;
+  font-size: 21px;
   line-height: 20px;
-  padding: 10px 20px;
+  padding: 15px 20px;
 }
 
 .list-item__img {
@@ -418,11 +418,17 @@
   .list__forms {
     font-size: 14px;
     line-height: 16px;
-    padding: 10px 10px;
+    padding: 15px 10px;
     overflow: visible;
   }
   .list-item__title {
     font-size: 16px;
     line-height: 16px;
+  }
+  .forms-item__button {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 15px 10px;
+    overflow: visible;
   }
 }

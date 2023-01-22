@@ -37,7 +37,7 @@
          top: 0;
          left: 50%;
          width: 100%;
-         transform: translateX(-49.7%);;
+         transform: translateX(-49.6%);;
          font-family: 'Usually';
          font-weight: 700;
          font-size: 130px;
@@ -53,7 +53,7 @@
          top: 0;
          left: 50%;
          width: 100%;
-         transform: translateX(-50.3%);;
+         transform: translateX(-50.4%);;
          font-family: 'Usually';
          font-weight: 700;
          font-size: 130px;
@@ -221,10 +221,12 @@
       &:before {
          font-size: 35px;
          line-height: 30px;
+         transform: translateX(-50.5%);
       }
       &:after {
          font-size: 35px;
          line-height: 30px;
+         transform: translateX(-49.5%);
       }
    }
 }
