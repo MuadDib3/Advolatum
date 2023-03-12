@@ -1038,7 +1038,6 @@ body {
   left: 0;
   z-index: 150;
   background-color: #0B0F14;
-  height: 100vh;
   padding-top: 50px;
 }
 
@@ -1049,6 +1048,7 @@ body {
   animation-direction: normal;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
+  height: 100vh;
 }
 
 .container-modal.nav-burger_closed {
